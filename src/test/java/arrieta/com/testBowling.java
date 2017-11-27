@@ -12,10 +12,12 @@ import junit.framework.TestCase;
 public class testBowling {
 
 	private Frame fr;
+	private Juego Ju;
 	
 	@Before	
 	public void setUp() throws Exception {
 		fr = new Frame();
+		
 	}
 	
 	@Test
@@ -44,11 +46,19 @@ public class testBowling {
 	}
 	
 	@Test
-	public void FrameInvalidoDistintosArgumentos() {
-		String numero = "82" + "a";
+	public void JuegoValido() {
 		
-		fr.valido(numero);
-		assertFalse("valor no valido", false) ;
+		Ju.valido([3] [5] [6] [7] [4] [4] [3] [5] [6] [7]);
+				
+		assertFalse("juego validoo", true) ;
 	}
+	
+	@Before	
+	public void setUp1() throws Exception {
+		Ju = new Juego();
+		
+	}
+	
+	
 
 }
