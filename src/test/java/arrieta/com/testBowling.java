@@ -51,12 +51,13 @@ public class testBowling {
 		
 	}
 	
+	@SuppressWarnings("null")
 	@Test
 	public void JuegoValido() {
 		
 		 
 		
-		Ju.valido(4, 4, 4, 5, 7, 3, 2, 3, 6, 3);
+		Ju.valido(4, 4, 4, 5, 7, 3, 2, 3, 6, 3, 0);
 				
 		assertTrue("juego valido", true);
 	}
@@ -68,7 +69,7 @@ public class testBowling {
 		
 		Ju.valido(4, 4, 4, 5, 7, 3, 2, 3, 6, 10, 8);
 				
-		assertTrue("juego valido", true);
+		assertFalse("juego extra", false);
 	}
 	
 	
