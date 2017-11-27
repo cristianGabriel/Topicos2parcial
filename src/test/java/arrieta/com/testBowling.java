@@ -72,6 +72,16 @@ public class testBowling {
 		assertFalse("juego extra", false);
 	}
 	
+	@Test(expected=Throwable.class)
+	public void Juego_incompleto() {
+		
+		 
+		
+		Ju.valido(4, 4, 4, 5, 7, 3, 2, 3, 6, null, null);
+		assertTrue("juego extra", true);
+		
+	}
+	
 	
 	
 	

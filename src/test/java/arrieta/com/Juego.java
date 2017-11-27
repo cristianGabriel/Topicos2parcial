@@ -8,18 +8,17 @@ public class Juego {
 			
 		int[] anArray = {i,j,k,l,m,n,o,p,q,r,s};
 		
-		int size=anArray.length;
 		
-		for(int x=0;x<size;x++) {
-		 
-	        if (anArray[9] != 10)	{        
+		
+		  if (anArray[9] == 10)	{        
 	        
-	        	return true;
+	        	return false;
 	        }
-	       			
+	        return true;			
 	}
-		return false;
-		}
+		
+		
+		
 }
 
 
