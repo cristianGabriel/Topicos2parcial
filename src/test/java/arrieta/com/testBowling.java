@@ -61,6 +61,16 @@ public class testBowling {
 		assertTrue("juego valido", true);
 	}
 	
+	@Test
+	public void JuegoExtra() {
+		
+		 
+		
+		Ju.valido(4, 4, 4, 5, 7, 3, 2, 3, 6, 10, 8);
+				
+		assertTrue("juego valido", true);
+	}
+	
 	
 	
 	
