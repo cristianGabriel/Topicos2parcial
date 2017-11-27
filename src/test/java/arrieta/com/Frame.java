@@ -2,14 +2,18 @@ package arrieta.com;
 
 public class Frame {
 	
-	public boolean valido(int i, int j) {
-		int frame = i +j;
+
+	
+	public boolean valido(int frame) {
+		
+		boolean retorno=false;
+			
 		
 		if (frame >=0 && frame <=10) {
-			return true;
+			retorno=true;
 		}
 		
-		return false;
+		return retorno;
 		
 	}
 
