@@ -43,5 +43,12 @@ public class testBowling {
 		assertFalse("valor no valido fuera del rango", false) ;
 	}
 	
+	@Test
+	public void FrameInvalidoDistintosArgumentos() {
+		String numero = "82" + "a";
+		
+		fr.valido(numero);
+		assertFalse("valor no valido", false) ;
+	}
 
 }
