@@ -27,8 +27,6 @@ public class testBowling {
 	
 	
 
-	
-
 	@Test
 	public void FrameInvalido() {
 		int numero = 82 +2;
@@ -37,6 +35,13 @@ public class testBowling {
 		assertFalse("valor no valido", false) ;
 	}
 
+	@Test
+	public void FrameInvalidoNegativo() {
+		int numero = -82 +2;
+		
+		fr.valido(numero);
+		assertFalse("valor no valido fuera del rango", false) ;
+	}
 	
 
 }
