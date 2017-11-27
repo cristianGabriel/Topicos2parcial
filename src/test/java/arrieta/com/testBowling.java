@@ -45,19 +45,23 @@ public class testBowling {
 		assertFalse("valor no valido fuera del rango", false) ;
 	}
 	
-	@Test
-	public void JuegoValido() {
-		
-		Ju.valido([3] [5] [6] [7] [4] [4] [3] [5] [6] [7]);
-				
-		assertFalse("juego validoo", true) ;
-	}
-	
 	@Before	
 	public void setUp1() throws Exception {
 		Ju = new Juego();
 		
 	}
+	
+	@Test
+	public void JuegoValido() {
+		
+		 
+		
+		Ju.valido(4, 4, 4, 5, 7, 3, 2, 3, 6, 3);
+				
+		assertTrue("juego valido", true);
+	}
+	
+	
 	
 	
 
